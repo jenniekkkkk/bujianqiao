@@ -290,9 +290,10 @@ This file can be re-written at any time.
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
-  
+  {% render 'gp-head' %}
 
   {% render 'shogun-head' %}
+{% include 'pagefly-app-header' %}
 </head>
 
 

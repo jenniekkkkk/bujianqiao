@@ -119,14 +119,8 @@
       >
         
   {%- liquid
-    assign mediaIndex = 1
-    if forloop
-      assign mediaIndex = forloop.index
-    endif
     assign isFetchPriorityHigh = 'false'
-    if section.index == 1 and 'false' == 'true' and mediaIndex == 1
-      assign isFetchPriorityHigh = 'true'
-    endif
+    
   -%}
   {%- if isFetchPriorityHigh == 'true' -%}
     <img
@@ -215,14 +209,8 @@
       >
         
   {%- liquid
-    assign mediaIndex = 1
-    if forloop
-      assign mediaIndex = forloop.index
-    endif
     assign isFetchPriorityHigh = 'false'
-    if section.index == 1 and 'false' == 'true' and mediaIndex == 1
-      assign isFetchPriorityHigh = 'true'
-    endif
+    
   -%}
   {%- if isFetchPriorityHigh == 'true' -%}
     <img
@@ -311,14 +299,8 @@
       >
         
   {%- liquid
-    assign mediaIndex = 1
-    if forloop
-      assign mediaIndex = forloop.index
-    endif
     assign isFetchPriorityHigh = 'false'
-    if section.index == 1 and 'false' == 'true' and mediaIndex == 1
-      assign isFetchPriorityHigh = 'true'
-    endif
+    
   -%}
   {%- if isFetchPriorityHigh == 'true' -%}
     <img
@@ -400,14 +382,8 @@
       >
         
   {%- liquid
-    assign mediaIndex = 1
-    if forloop
-      assign mediaIndex = forloop.index
-    endif
     assign isFetchPriorityHigh = 'false'
-    if section.index == 1 and 'false' == 'true' and mediaIndex == 1
-      assign isFetchPriorityHigh = 'true'
-    endif
+    
   -%}
   {%- if isFetchPriorityHigh == 'true' -%}
     <img
@@ -454,6 +430,12 @@
         {
           "type": "paragraph",
           "content": "Section design by GemPages. [Click here to start design](https://admin.shopify.com/store/c4e72d-3/apps/bold/app/shopify/edit?pageType=GP_PRODUCT&editorId=495958189020283785&sectionId=495965045650359177)"
+        },
+        {
+          "type": "text",
+          "label": "section_preload",
+          "id": "section_preload",
+          "default": "false"
         }
       ],
       "blocks": [{"type": "@app"}]
