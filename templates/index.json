@@ -86,7 +86,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "马克杯",
+        "collection": "thermos",
         "products_to_show": 5,
         "columns_desktop": 2,
         "full_width": false,
