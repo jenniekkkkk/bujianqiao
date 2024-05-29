@@ -20,7 +20,7 @@
       }
     },
     "header": {
-      "type": "header",
+      "type": "header-navbar",
       "settings": {
         "menu": "main-menu"
       }
