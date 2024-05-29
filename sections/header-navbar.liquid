@@ -1,32 +1,9 @@
-{%- comment -%}
-  This is a required section for the Shopify Theme Store.
-  It is available in the "Header" section in the theme editor.
-
-  Theme Store required settings
-  - Show announcement
-  - Text: message to announce
-  - Link: link of the announcement bar
-
-  Theme Store optional settings
-  - Home page only: only shows on the home page
-{%- endcomment -%}
 <section data-section-id="{{ section.id }}" data-section-type="header">
-
   <header>
-    {%render 'navbar' %}
+    {% include 'navbar' %}
   </header>
-  
-
 </section>
 
-{% if section.settings.logo != blank %}
-  <style>
-    .logo-image {
-      display: block;
-      max-width: {{ section.settings.logo_max_width }}px;
-    }
-  </style>
-{% endif %}
 
 {% schema %}
   {
@@ -96,7 +73,7 @@
   "name": "{{ shop.name }}",
   {% if section.settings.logo %}
     {% assign image_size = section.settings.logo.width | append:'x' %}
-    "logo": "https://{{ section.settings.logo | image_url: image_size }}",
+    "logo": "https:{{ section.settings.logo | img_url: image_size }}",
   {% endif %}
   "sameAs": [
     "{{ settings.social_twitter_link }}",
