@@ -27,7 +27,7 @@
       }
     },
     "header": {
-      "type": "header-navbar",
+      "type": "header",
       "settings": {
         "menu": "main-menu"
       }
